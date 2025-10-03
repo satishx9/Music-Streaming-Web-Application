@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/script.js"></script>
+    <title>MyTune - Web Player: Music for everyone</title>
+</head>
+
+<body>
+        <div class="container flex bg-black">
+            <div class="left bg-black">
+                <div class="close">
+                    <img src="img/close.svg" class="invert" alt="">
+                </div>
+                <div class="home bg-grey m-1 radius p-1">
+                    <!-- <div class="logo">
+                        <img class="invert" width="100px" src="img/logo.svg" alt="" srcset="">
+                    </div> -->
+                    <ul>
+                      </a>  <li><img class="invert" src="img/home.svg" alt="Home" srcset="">Home</li>
+                        <li><img class="invert" src="img/search.svg" alt="Search" srcset="">Search</li>
+                    </ul>
+                    <div id="themeToggle" class="light-mode-toggle">
+                        <img id="themeIcon" src="img/mode.svg" alt="Toggle Theme"> Theme
+                    </div>
+                                       
+                </div>
+                <div class="library bg-grey radius m-1 p-1">
+                    <div class="heading">
+                        <img class="invert" src="img/playlist.svg" width="23px" srcset="">
+                        <h2 class="font-s">Your Library</h2>
+                    </div>
+                    <div class="playList">
+                        <ul>
+                            <!-- Songs will be dynamically added here -->
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <div>
+                            <a href="https://www.spotify.com/in-en/legal/">
+                                <span>Legal</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                                <span>Safety & Privacy Center</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                                <span>Privacy Policy</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                                <span>Cookies</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right bg-grey radius">
+                <div class="header">
+                    <div class="nav">
+                        <div class="svg">
+                            <img src="img/option.svg" width="40px" class="invert hamburger" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="#ffffff" fill="none">
+                                <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="#fffff" fill="none">
+                                <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="text" id="searchInput" placeholder="Search for a song..." style="padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                        <button class="signbtn">Sign up</button>
+                        <button class="loginbtn">Log in</button>
+                    </div>
+                </div>
+                <div class="spotifyPlaylist">
+                    <h2>MyTune Playlists</h2>
+                    <div class="cardContainer">
+                        <!-- Album cards will be dynamically added here -->
+                    </div>
+                    <div class="playbar">
+                        <div class="seekbar">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="abovebar">
+                            <div class="songinfo"></div>
+                            <div class="playbarContainer">
+                                <img width="30px" id="previous" src="img/pre.svg" alt="" srcset="">
+                                <img width="30px" id="play" src="img/play.svg" alt="" srcset="">
+                                <img width="30px" id="next" src="img/next.svg" alt="" srcset="">
+                            </div>
+                            <div class="timevol">
+                                <div class="songtime"></div>
+                                <div class="volume">
+                                    <img src="img/volume.svg" alt="" srcset="">
+                                    <div class="range">
+                                        <input type="range" name="volume">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+</body>
+
+</html>
